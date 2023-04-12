@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "70-deploy-blog"
+version = "0.1.0"
+description = ""
+authors = ["Nikolai Dvoinishnikov <nikdvy@gmail.com>"]
+readme = "README.md"
+packages = [{include = "70_deploy_blog"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
