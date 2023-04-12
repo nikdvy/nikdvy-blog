@@ -14,7 +14,7 @@ from functools import wraps
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
+app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY').replace('postgres', 'postgresql')
 ckeditor = CKEditor(app)
 Bootstrap(app)
 gravatar = Gravatar(app,
